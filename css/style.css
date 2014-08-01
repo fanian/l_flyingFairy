@@ -1,0 +1,794 @@
+/* line 5, D:/proj/idea/flyingFairy/sass/style.sass */
+body {
+  font-family: "Fregat", Sans-serif;
+  background: white;
+  min-width: 1200px;
+  min-height: 200px;
+  color: #282828;
+}
+
+/* line 12, D:/proj/idea/flyingFairy/sass/style.sass */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* line 21, D:/proj/idea/flyingFairy/sass/style.sass */
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 26, D:/proj/idea/flyingFairy/sass/style.sass */
+.fl {
+  float: left;
+}
+
+/* line 29, D:/proj/idea/flyingFairy/sass/style.sass */
+.fr {
+  float: right;
+}
+
+/* line 32, D:/proj/idea/flyingFairy/sass/style.sass */
+.cb {
+  clear: both;
+}
+
+/* line 34, D:/proj/idea/flyingFairy/sass/style.sass */
+input.error, textarea.error {
+  box-shadow: 0 0 5px red !important;
+}
+
+/* line 36, D:/proj/idea/flyingFairy/sass/style.sass */
+label.error {
+  display: none !important;
+}
+/* line 2, D:/proj/idea/flyingFairy/sass/_placeholderText.scss */
+label.error.placeholder {
+  color: black;
+}
+/* line 3, D:/proj/idea/flyingFairy/sass/_placeholderText.scss */
+label.error:-moz-placeholder {
+  color: black;
+}
+/* line 4, D:/proj/idea/flyingFairy/sass/_placeholderText.scss */
+label.error::-moz-placeholder {
+  color: black;
+}
+/* line 5, D:/proj/idea/flyingFairy/sass/_placeholderText.scss */
+label.error:-ms-input-placeholder {
+  color: black;
+}
+/* line 6, D:/proj/idea/flyingFairy/sass/_placeholderText.scss */
+label.error::-webkit-input-placeholder {
+  color: black;
+}
+
+/* line 44, D:/proj/idea/flyingFairy/sass/style.sass */
+header, footer {
+  height: 70px;
+  position: fixed;
+  background: white;
+  width: 100%;
+  z-index: 9999;
+}
+/* line 50, D:/proj/idea/flyingFairy/sass/style.sass */
+header nav, footer nav {
+  float: left;
+  margin: 10px auto 0;
+}
+/* line 54, D:/proj/idea/flyingFairy/sass/style.sass */
+header nav ul, footer nav ul {
+  font-size: 16px;
+  padding: 0;
+}
+/* line 57, D:/proj/idea/flyingFairy/sass/style.sass */
+header nav ul li, footer nav ul li {
+  display: inline-block;
+  float: left;
+  text-transform: uppercase;
+  margin-right: 15px;
+}
+/* line 62, D:/proj/idea/flyingFairy/sass/style.sass */
+header nav ul a, footer nav ul a {
+  text-decoration: none;
+  color: inherit;
+}
+/* line 65, D:/proj/idea/flyingFairy/sass/style.sass */
+header .addr, footer .addr {
+  text-align: right;
+  margin-top: 5px;
+}
+/* line 68, D:/proj/idea/flyingFairy/sass/style.sass */
+header .addr h2, footer .addr h2 {
+  font-size: 28px;
+  font-weight: normal;
+  margin: 0;
+}
+/* line 73, D:/proj/idea/flyingFairy/sass/style.sass */
+header .addr p, footer .addr p {
+  font-size: 15px;
+  margin: 0;
+}
+
+/* line 76, D:/proj/idea/flyingFairy/sass/style.sass */
+.top {
+  background: url(../img/top.png) center no-repeat;
+  height: 770px;
+  padding-top: 70px;
+}
+/* line 80, D:/proj/idea/flyingFairy/sass/style.sass */
+.top .text {
+  width: 600px;
+}
+/* line 82, D:/proj/idea/flyingFairy/sass/style.sass */
+.top .text h2 {
+  text-align: left;
+  font-size: 47px;
+  color: white;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+/* line 88, D:/proj/idea/flyingFairy/sass/style.sass */
+.top .text h3 {
+  text-align: right;
+  font-size: 54px;
+  color: #ffcd43;
+  text-transform: uppercase;
+  margin: 0;
+  padding-right: 105px;
+}
+/* line 95, D:/proj/idea/flyingFairy/sass/style.sass */
+.top .text p {
+  font-size: 16px;
+  text-align: left;
+  color: white;
+  width: 315px;
+  float: right;
+  padding-right: 47px;
+  line-height: 1.7em;
+}
+/* line 103, D:/proj/idea/flyingFairy/sass/style.sass */
+.top .text .price {
+  position: relative;
+  top: 223px;
+  left: 278px;
+  float: left;
+}
+/* line 108, D:/proj/idea/flyingFairy/sass/style.sass */
+.top .text .price h3 {
+  font-size: 59px;
+  display: inline-block;
+  float: left;
+  padding-right: 50px;
+  color: white;
+  font-style: italic;
+  background: url(../img/ruble.png) center right no-repeat;
+}
+/* line 116, D:/proj/idea/flyingFairy/sass/style.sass */
+.top .text .price h4 {
+  font-size: 17px;
+  width: 90px;
+  display: inline-block;
+  float: left;
+  font-style: italic;
+  color: white;
+  margin-top: 15px;
+  margin-left: 30px;
+  font-weight: normal;
+}
+/* line 126, D:/proj/idea/flyingFairy/sass/style.sass */
+.top .text .price h4 span {
+  background: url(../img/ruble_sm.png) center no-repeat;
+  font-size: 32px;
+  font-style: italic;
+  padding-right: 84px;
+  text-decoration: line-through;
+  margin-left: -6px;
+  line-height: 1em;
+}
+/* line 135, D:/proj/idea/flyingFairy/sass/style.sass */
+.top .form {
+  width: 360px;
+}
+/* line 138, D:/proj/idea/flyingFairy/sass/style.sass */
+.top .form .caption {
+  background: #9f528c;
+  height: 260px;
+  padding-top: 65px;
+}
+/* line 143, D:/proj/idea/flyingFairy/sass/style.sass */
+.top .form .caption h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 27px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+/* line 150, D:/proj/idea/flyingFairy/sass/style.sass */
+.top .form .caption h4 {
+  margin-top: 18px;
+  font-size: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: white;
+}
+
+/* line 159, D:/proj/idea/flyingFairy/sass/style.sass */
+.flip-clock-dot {
+  visibility: hidden;
+}
+
+/* line 161, D:/proj/idea/flyingFairy/sass/style.sass */
+.flip-clock-wrapper ul li a div div.inn {
+  color: #3d3d3d;
+  background-color: #d9d9d9;
+}
+
+/* line 166, D:/proj/idea/flyingFairy/sass/style.sass */
+.clock {
+  -webkit-transform: scale(0.54, 0.54);
+  -moz-transform: scale(0.54, 0.54);
+  -ms-transform: scale(0.54, 0.54);
+  -o-transform: scale(0.54, 0.54);
+  transform: scale(0.54, 0.54);
+  padding-top: 0px;
+  margin-left: -100px;
+  width: 561px;
+  margin-top: -30px;
+}
+
+/* line 174, D:/proj/idea/flyingFairy/sass/style.sass */
+span .flip-clock-label {
+  color: white !important;
+  text-transform: uppercase;
+  font-size: 24px;
+  left: 32px;
+  top: 113px !important;
+}
+
+/* line 181, D:/proj/idea/flyingFairy/sass/style.sass */
+.flip-clock-wrapper {
+  font: inherit;
+}
+/* line 183, D:/proj/idea/flyingFairy/sass/style.sass */
+.flip-clock-wrapper ul {
+  margin: 1px;
+}
+
+/* line 186, D:/proj/idea/flyingFairy/sass/style.sass */
+.frm, .formWide .frmW {
+  background: #ffcb3e;
+  height: 257px;
+  padding-top: 30px;
+}
+/* line 191, D:/proj/idea/flyingFairy/sass/style.sass */
+.frm form input, .formWide .frmW form input {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  padding-left: 14px;
+  width: 285px;
+  height: 45px;
+  background: white;
+  display: block;
+  margin: auto auto 10px;
+  border: none;
+  -webkit-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.8);
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.8);
+}
+/* line 201, D:/proj/idea/flyingFairy/sass/style.sass */
+.frm form .button, .formWide .frmW form .button {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  width: 285px;
+  height: 68px;
+  background: #9f528c;
+  color: white;
+  text-transform: uppercase;
+  display: block;
+  margin: 20px auto auto;
+  font-size: 26px;
+  border: none;
+  -webkit-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.8);
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.8);
+}
+/* line 213, D:/proj/idea/flyingFairy/sass/style.sass */
+.frm form .button:hover, .formWide .frmW form .button:hover {
+  background: #ab6199;
+}
+/* line 215, D:/proj/idea/flyingFairy/sass/style.sass */
+.frm form .button:active, .formWide .frmW form .button:active {
+  -webkit-box-shadow: 0 0 0 black;
+  -moz-box-shadow: 0 0 0 black;
+  box-shadow: 0 0 0 black;
+}
+
+/* line 217, D:/proj/idea/flyingFairy/sass/style.sass */
+.why, .how, .reviews {
+  margin-top: -80px;
+}
+/* line 219, D:/proj/idea/flyingFairy/sass/style.sass */
+.why h2, .how h2, .reviews h2 {
+  font-size: 42px;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.1em;
+}
+/* line 226, D:/proj/idea/flyingFairy/sass/style.sass */
+.why .items, .how .items, .reviews .items {
+  text-align: center;
+}
+/* line 229, D:/proj/idea/flyingFairy/sass/style.sass */
+.why .items h3, .how .items h3, .reviews .items h3 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 20px;
+  line-height: 1.1em;
+  margin-top: 30px;
+}
+/* line 235, D:/proj/idea/flyingFairy/sass/style.sass */
+.why .items h4, .how .items h4, .reviews .items h4 {
+  font-size: 17px;
+  font-weight: normal;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 0;
+}
+/* line 242, D:/proj/idea/flyingFairy/sass/style.sass */
+.why .items h5, .how .items h5, .reviews .items h5 {
+  font-size: 12px;
+  color: #b8b8b8;
+}
+/* line 245, D:/proj/idea/flyingFairy/sass/style.sass */
+.why .items .item, .how .items .item, .reviews .items .item {
+  width: 320px;
+  background: url("../img/border_snake.png") right center no-repeat;
+}
+/* line 249, D:/proj/idea/flyingFairy/sass/style.sass */
+.why .items .item:last-child, .how .items .item:last-child, .reviews .items .item:last-child {
+  background: none;
+}
+
+/* line 251, D:/proj/idea/flyingFairy/sass/style.sass */
+.bigButton {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  width: 596px;
+  height: 75px;
+  background: #f5be29;
+  color: white;
+  text-transform: uppercase;
+  display: block;
+  margin: 20px auto auto;
+  font-size: 26px;
+  border: none;
+  letter-spacing: -0.9px;
+  -webkit-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.8);
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.8);
+}
+
+/* line 264, D:/proj/idea/flyingFairy/sass/style.sass */
+.bigButton:hover {
+  background: #fdca41;
+}
+
+/* line 266, D:/proj/idea/flyingFairy/sass/style.sass */
+.bigButton:active {
+  -webkit-box-shadow: 0 0 0 black;
+  -moz-box-shadow: 0 0 0 black;
+  box-shadow: 0 0 0 black;
+}
+
+/* line 268, D:/proj/idea/flyingFairy/sass/style.sass */
+.super {
+  background: url(../img/super.jpg) center no-repeat;
+  height: 365px;
+  margin-top: 55px;
+}
+
+/* line 272, D:/proj/idea/flyingFairy/sass/style.sass */
+.how {
+  margin-top: 0;
+}
+/* line 276, D:/proj/idea/flyingFairy/sass/style.sass */
+.how .items h3 {
+  color: #9f528c;
+  text-transform: uppercase;
+}
+/* line 279, D:/proj/idea/flyingFairy/sass/style.sass */
+.how .items h4 {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+/* line 282, D:/proj/idea/flyingFairy/sass/style.sass */
+.formWide {
+  margin-top: 30px;
+  background: #af6592;
+  height: 340px;
+  text-align: center;
+}
+/* line 287, D:/proj/idea/flyingFairy/sass/style.sass */
+.formWide h2 {
+  text-align: center;
+  color: white;
+  font-size: 42px;
+  font-weight: normal;
+  line-height: 1.1em;
+  margin-bottom: 10px;
+  margin-top: 50px;
+  text-transform: uppercase;
+}
+/* line 296, D:/proj/idea/flyingFairy/sass/style.sass */
+.formWide h2 span {
+  font-weight: bold;
+}
+/* line 298, D:/proj/idea/flyingFairy/sass/style.sass */
+.formWide h3 {
+  color: white;
+  font-size: 21px;
+  font-weight: normal;
+}
+/* line 304, D:/proj/idea/flyingFairy/sass/style.sass */
+.formWide .frmW {
+  height: inherit;
+  background: none;
+}
+/* line 309, D:/proj/idea/flyingFairy/sass/style.sass */
+.formWide .frmW form {
+  text-align: center;
+}
+/* line 311, D:/proj/idea/flyingFairy/sass/style.sass */
+.formWide .frmW form input {
+  margin-right: 20px;
+  display: inline-block;
+}
+/* line 314, D:/proj/idea/flyingFairy/sass/style.sass */
+.formWide .frmW form .button {
+  display: inline-block;
+  width: 255px;
+  height: 47px;
+  background: #f5be29;
+  -webkit-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.8);
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.8);
+  margin: 0 0 0 -10px;
+  vertical-align: middle;
+}
+/* line 322, D:/proj/idea/flyingFairy/sass/style.sass */
+.formWide .frmW form .button:hover {
+  background: #fdca41;
+}
+/* line 324, D:/proj/idea/flyingFairy/sass/style.sass */
+.formWide .frmW form .button:active {
+  -webkit-box-shadow: 0 0 0 black;
+  -moz-box-shadow: 0 0 0 black;
+  box-shadow: 0 0 0 black;
+}
+
+/* line 326, D:/proj/idea/flyingFairy/sass/style.sass */
+.reviews {
+  text-align: center;
+  margin-top: 0;
+}
+/* line 330, D:/proj/idea/flyingFairy/sass/style.sass */
+.reviews .slider {
+  height: 412px;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+/* line 335, D:/proj/idea/flyingFairy/sass/style.sass */
+.reviews .items {
+  margin-bottom: 30px;
+}
+/* line 337, D:/proj/idea/flyingFairy/sass/style.sass */
+.reviews .items .item {
+  background: none;
+}
+/* line 339, D:/proj/idea/flyingFairy/sass/style.sass */
+.reviews button {
+  display: inline-block;
+  width: 300px;
+  height: 47px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 17px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  letter-spacing: -1px;
+  border: none;
+  -webkit-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.8);
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.8);
+}
+/* line 350, D:/proj/idea/flyingFairy/sass/style.sass */
+.reviews .button {
+  display: inline-block;
+  width: 300px;
+  height: 47px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 17px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  border: none;
+  -webkit-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.8);
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.8);
+  padding-top: 10px;
+  text-decoration: none;
+}
+/* line 365, D:/proj/idea/flyingFairy/sass/style.sass */
+.reviews .comments {
+  background: #f5be29;
+  margin-right: 10px;
+}
+/* line 368, D:/proj/idea/flyingFairy/sass/style.sass */
+.reviews .comments:hover {
+  background: #fdca41;
+}
+/* line 370, D:/proj/idea/flyingFairy/sass/style.sass */
+.reviews .write {
+  background: #9f528c;
+}
+/* line 372, D:/proj/idea/flyingFairy/sass/style.sass */
+.reviews .write:hover {
+  background: #ab6199;
+}
+/* line 376, D:/proj/idea/flyingFairy/sass/style.sass */
+.reviews button:active {
+  -webkit-box-shadow: 0 0 0 black;
+  -moz-box-shadow: 0 0 0 black;
+  box-shadow: 0 0 0 black;
+}
+/* line 378, D:/proj/idea/flyingFairy/sass/style.sass */
+.reviews .button:active {
+  -webkit-box-shadow: 0 0 0 black;
+  -moz-box-shadow: 0 0 0 black;
+  box-shadow: 0 0 0 black;
+}
+
+/* line 381, D:/proj/idea/flyingFairy/sass/style.sass */
+.mln {
+  margin-top: 40px;
+}
+/* line 383, D:/proj/idea/flyingFairy/sass/style.sass */
+.mln h2 {
+  text-align: center;
+  font-size: 45px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+/* line 388, D:/proj/idea/flyingFairy/sass/style.sass */
+.mln h2 span {
+  color: white;
+  font-weight: bold;
+  background: url(../img/circle.png) center no-repeat;
+  padding-top: 58px;
+  width: 175px;
+  height: 175px;
+  display: inline-block;
+}
+/* line 396, D:/proj/idea/flyingFairy/sass/style.sass */
+.mln .russia {
+  background: url(../img/russia.png) left center no-repeat;
+  height: 400px;
+  width: 1030px;
+  margin-left: -50px;
+}
+/* line 402, D:/proj/idea/flyingFairy/sass/style.sass */
+.mln .russia .text h3 {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: left;
+}
+/* line 407, D:/proj/idea/flyingFairy/sass/style.sass */
+.mln .russia .text h4 {
+  font-weight: normal;
+  text-align: left;
+  font-size: 17px;
+}
+/* line 411, D:/proj/idea/flyingFairy/sass/style.sass */
+.mln .russia .text ul {
+  list-style: none;
+  text-align: left;
+  padding-left: 50px;
+}
+/* line 415, D:/proj/idea/flyingFairy/sass/style.sass */
+.mln .russia .text ul li {
+  display: block;
+  width: 430px;
+  height: 90px;
+  padding-left: 80px;
+}
+/* line 421, D:/proj/idea/flyingFairy/sass/style.sass */
+.mln .russia .text ul li.mln1 {
+  background: url(../img/mln1.png) left top no-repeat;
+}
+/* line 423, D:/proj/idea/flyingFairy/sass/style.sass */
+.mln .russia .text ul li.mln2 {
+  background: url(../img/mln2.png) left top no-repeat;
+}
+
+/* line 425, D:/proj/idea/flyingFairy/sass/style.sass */
+.work {
+  background: url(../img/bg_yellow.png) center no-repeat;
+  height: 743px;
+}
+/* line 428, D:/proj/idea/flyingFairy/sass/style.sass */
+.work h2 {
+  font-size: 42px;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 60px;
+}
+/* line 434, D:/proj/idea/flyingFairy/sass/style.sass */
+.work .images {
+  text-align: center;
+  margin-top: 182px;
+}
+/* line 437, D:/proj/idea/flyingFairy/sass/style.sass */
+.work .images img {
+  margin-right: 35px;
+  display: inline-block;
+}
+/* line 440, D:/proj/idea/flyingFairy/sass/style.sass */
+.work .images img:last-child {
+  margin-right: 0;
+}
+/* line 442, D:/proj/idea/flyingFairy/sass/style.sass */
+.work .popup {
+  position: relative;
+  display: inline-block;
+}
+/* line 445, D:/proj/idea/flyingFairy/sass/style.sass */
+.work .popup.up1 {
+  background: url(../img/qUp.png) center no-repeat;
+  bottom: 360px;
+  right: 30px;
+  width: 289px;
+  height: 132px;
+}
+/* line 451, D:/proj/idea/flyingFairy/sass/style.sass */
+.work .popup.up2 {
+  background: url(../img/qUp.png) center no-repeat;
+  bottom: 360px;
+  left: 167px;
+  width: 289px;
+  height: 132px;
+}
+/* line 457, D:/proj/idea/flyingFairy/sass/style.sass */
+.work .popup.down1 {
+  background: url(../img/qDown.png) center no-repeat;
+  bottom: 5px;
+  right: 390px;
+  width: 289px;
+  height: 132px;
+  margin: 15px;
+}
+/* line 464, D:/proj/idea/flyingFairy/sass/style.sass */
+.work .popup.down2 {
+  background: url(../img/qDown.png) center no-repeat;
+  bottom: 150px;
+  left: 713px;
+  width: 289px;
+  height: 132px;
+}
+/* line 471, D:/proj/idea/flyingFairy/sass/style.sass */
+.work .popup h2 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+/* line 477, D:/proj/idea/flyingFairy/sass/style.sass */
+.work .popup p {
+  text-align: center;
+  font-size: 17px;
+  margin: 0;
+}
+
+/* line 482, D:/proj/idea/flyingFairy/sass/style.sass */
+footer {
+  height: 120px;
+  position: relative;
+}
+/* line 486, D:/proj/idea/flyingFairy/sass/style.sass */
+footer nav {
+  margin-top: 35px;
+}
+/* line 488, D:/proj/idea/flyingFairy/sass/style.sass */
+footer .addr {
+  margin-top: 30px;
+}
+
+/* line 491, D:/proj/idea/flyingFairy/sass/style.sass */
+.feedback form {
+  width: 300px;
+}
+/* line 493, D:/proj/idea/flyingFairy/sass/style.sass */
+.feedback form h3 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 20px;
+}
+/* line 497, D:/proj/idea/flyingFairy/sass/style.sass */
+.feedback form input {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  padding-left: 14px;
+  width: 285px;
+  height: 45px;
+  background: white;
+  display: block;
+  margin: auto auto 10px;
+  border: 1px solid darkgrey;
+}
+/* line 506, D:/proj/idea/flyingFairy/sass/style.sass */
+.feedback form button {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  width: 285px;
+  height: 68px;
+  background: #9f528c;
+  color: white;
+  text-transform: uppercase;
+  display: block;
+  margin: 10px auto auto;
+  font-size: 26px;
+  border: none;
+  -webkit-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.8);
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.8);
+}
+/* line 518, D:/proj/idea/flyingFairy/sass/style.sass */
+.feedback form button:hover {
+  background: #ab6199;
+}
+/* line 520, D:/proj/idea/flyingFairy/sass/style.sass */
+.feedback form button:active {
+  -webkit-box-shadow: 0 0 0 black;
+  -moz-box-shadow: 0 0 0 black;
+  box-shadow: 0 0 0 black;
+}
+/* line 522, D:/proj/idea/flyingFairy/sass/style.sass */
+.feedback form textarea {
+  width: 285px;
+  height: 80px;
+  background: white;
+  display: block;
+  border: 1px solid darkgrey;
+  margin: 10px auto auto;
+}

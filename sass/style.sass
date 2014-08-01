@@ -1,0 +1,552 @@
+$f: 'Fregat', Sans-serif
+
+
+
+body
+  font-family: $f
+  background: white
+  min-width: 1200px
+  min-height: 200px
+  color: #282828
+
+*, *:before, *:after
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+  outline: none
+
+@import "compass/css3"
+@import "placeholderText"
+
+.wrapper
+  width: 960px
+  margin: 0 auto
+  position: relative
+
+.fl
+  float: left
+
+.fr
+  float: right
+
+.cb
+  clear: both
+input.error, textarea.error
+  box-shadow: 0 0 5px red !important
+label.error
+  display: none !important
+
+
+  @include input-placeholder
+    color: #000000
+
+
+header
+  height: 70px
+  position: fixed
+  background: #ffffff
+  width: 100%
+  z-index: 9999
+  nav
+    float: left
+    margin: 10px auto 0
+
+    ul
+      font-size: 16px
+      padding: 0
+      li
+        display: inline-block
+        float: left
+        text-transform: uppercase
+        margin-right: 15px
+      a
+        text-decoration: none
+        color: inherit
+  .addr
+    text-align: right
+    margin-top: 5px
+    h2
+      font-size: 28px
+      font-weight: normal
+      margin: 0
+
+    p
+      font-size: 15px
+      margin: 0
+.top
+  background: url(../img/top.png) center no-repeat
+  height: 770px
+  padding-top: 70px
+  .text
+    width: 600px
+    h2
+      text-align: left
+      font-size: 47px
+      color: #ffffff
+      font-weight: normal
+      margin-bottom: 0
+    h3
+      text-align: right
+      font-size: 54px
+      color: rgb(255,205,67)
+      text-transform: uppercase
+      margin: 0
+      padding-right: 105px
+    p
+      font-size: 16px
+      text-align: left
+      color: #ffffff
+      width: 315px
+      float: right
+      padding-right: 47px
+      line-height: 1.7em
+    .price
+      position: relative
+      top: 223px
+      left: 278px
+      float: left
+      h3
+        font-size: 59px
+        display: inline-block
+        float: left
+        padding-right: 50px
+        color: #ffffff
+        font-style: italic
+        background: url(../img/ruble.png) center right no-repeat
+      h4
+        font-size: 17px
+        width: 90px
+        display: inline-block
+        float: left
+        font-style: italic
+        color: #ffffff
+        margin-top: 15px
+        margin-left: 30px
+        font-weight: normal
+        span
+          background: url(../img/ruble_sm.png) center no-repeat
+          font-size: 32px
+          font-style: italic
+          padding-right: 84px
+          text-decoration: line-through
+          margin-left: -6px
+          line-height: 1em
+
+  .form
+    width: 360px
+
+    .caption
+      background: rgb(159,82,140)
+      height: 260px
+      padding-top: 65px
+
+      h3
+        margin-top: 0
+        margin-bottom: 0
+        font-size: 27px
+        text-align: center
+        text-transform: uppercase
+        color: #ffffff
+      h4
+        margin-top: 18px
+        font-size: 15px
+        text-align: center
+        text-transform: uppercase
+        font-weight: normal
+        color: #ffffff
+
+
+.flip-clock-dot
+  visibility: hidden
+.flip-clock-wrapper ul li a div div.inn
+  color: #3d3d3d
+  background-color: #d9d9d9
+  //-o-animation: important
+  //animation: important
+.clock
+  @include scale(0.54)
+  padding-top: 0px
+  margin-left: -100px
+  width: 561px
+  margin-top: -30px
+
+span
+  .flip-clock-label
+    color: #ffffff !important
+
+    text-transform: uppercase
+    font-size: 24px
+    left: 32px
+    top: 113px !important
+.flip-clock-wrapper
+  font: inherit
+  ul
+    margin: 1px
+
+.frm
+  background: rgb(255,203,62)
+  height: 257px
+  padding-top: 30px
+  form
+    input
+      @include border-radius(2px)
+      padding-left: 14px
+      width: 285px
+      height: 45px
+      background: #ffffff
+      display: block
+      margin: auto auto 10px
+      border: none
+      @include box-shadow(1px 2px 2px rgba(0,0,0,.8))
+    .button
+      @include border-radius(2px)
+      width: 285px
+      height: 68px
+      background: rgb(159,82,140)
+      color: #ffffff
+      text-transform: uppercase
+      display: block
+      margin: 20px auto auto
+      font-size: 26px
+      border: none
+      @include box-shadow(1px 2px 2px rgba(0,0,0,.8))
+    .button:hover
+      background: rgb(171,97,153)
+    .button:active
+      @include box-shadow(0 0 0 rgb(0,0,0))
+.why
+  margin-top: -80px
+  h2
+    font-size: 42px
+    font-weight: normal
+    text-align: center
+    text-transform: uppercase
+    line-height: 1.1em
+
+  .items
+
+    text-align: center
+    h3
+      font-size: 24px
+      font-weight: normal
+      margin-bottom: 20px
+      line-height: 1.1em
+      margin-top: 30px
+    h4
+      font-size: 17px
+      font-weight: normal
+      margin-left: 20px
+      margin-right: 20px
+      margin-top: 0
+
+    h5
+      font-size: 12px
+      color: rgb(184,184,184)
+    .item
+      width: 320px
+      background: url("../img/border_snake.png") right center no-repeat
+
+    .item:last-child
+      background: none
+.bigButton
+  @include border-radius(2px)
+  width: 596px
+  height: 75px
+  background: rgb(245,190,41)
+  color: #ffffff
+  text-transform: uppercase
+  display: block
+  margin: 20px auto auto
+  font-size: 26px
+  border: none
+  letter-spacing: -0.9px
+  @include box-shadow(1px 2px 2px rgba(0,0,0,.8))
+.bigButton:hover
+  background: rgb(253,202,65)
+.bigButton:active
+  @include box-shadow(0 0 0 rgb(0,0,0))
+.super
+  background: url(../img/super.jpg) center no-repeat
+  height: 365px
+  margin-top: 55px
+.how
+  @extend .why
+  margin-top: 0
+  .items
+    h3
+      color: rgb(159,82,140)
+      text-transform: uppercase
+    h4
+      margin-left: 25px
+      margin-right: 25px
+.formWide
+  margin-top: 30px
+  background: rgb(175, 101, 146)
+  height: 340px
+  text-align: center
+  h2
+    text-align: center
+    color: #ffffff
+    font-size: 42px
+    font-weight: normal
+    line-height: 1.1em
+    margin-bottom: 10px
+    margin-top: 50px
+    text-transform: uppercase
+    span
+      font-weight: bold
+  h3
+    color: #ffffff
+    font-size: 21px
+    font-weight: normal
+
+
+  .frmW
+    height: inherit
+    @extend .frm
+    background: none
+
+    form
+      text-align: center
+      input
+        margin-right: 20px
+        display: inline-block
+      .button
+        display: inline-block
+        width: 255px
+        height: 47px
+        background: rgb(245,190,41)
+        @include box-shadow(1px 2px 2px rgba(0,0,0,.8))
+        margin: 0 0 0 -10px
+        vertical-align: middle
+      .button:hover
+        background: rgb(253,202,65)
+      .button:active
+        @include box-shadow(0 0 0 rgb(0,0,0))
+.reviews
+  text-align: center
+  margin-top: 0
+  @extend .why
+  .slider
+    height: 412px
+    h2
+    margin-top: 60px
+    margin-bottom: 40px
+  .items
+    margin-bottom: 30px
+    .item
+      background: none
+  button
+    display: inline-block
+    width: 300px
+    height: 47px
+    text-transform: uppercase
+    color: #ffffff
+    font-size: 17px
+    +border-radius(2px)
+    letter-spacing: -1px
+    border: none
+    +box-shadow(1px 2px 2px rgba(0,0,0,.8))
+  .button
+    display: inline-block
+    width: 300px
+    height: 47px
+    text-transform: uppercase
+    color: #ffffff
+    font-size: 17px
+    +border-radius(2px)
+    border: none
+    +box-shadow(1px 2px 2px rgba(0,0,0,.8))
+    padding-top: 10px
+    text-decoration: none
+
+
+
+  .comments
+    background: rgb(245,190,41)
+    margin-right: 10px
+  .comments:hover
+    background: rgb(253,202,65)
+  .write
+    background: rgb(159,82,140)
+  .write:hover
+    background: rgb(171,97,153)
+
+
+  button:active
+    @include box-shadow(0 0 0 rgb(0,0,0))
+  .button:active
+    @include box-shadow(0 0 0 rgb(0,0,0))
+
+.mln
+  margin-top: 40px
+  h2
+    text-align: center
+    font-size: 45px
+    text-transform: uppercase
+    margin-bottom: 0
+    span
+      color: #ffffff
+      font-weight: bold
+      background: url(../img/circle.png) center no-repeat
+      padding-top: 58px
+      width: 175px
+      height: 175px
+      display: inline-block
+  .russia
+    background: url(../img/russia.png) left center no-repeat
+    height: 400px
+    width: 1030px
+    margin-left: -50px
+    .text
+      h3
+        text-transform: uppercase
+        font-size: 24px
+        font-weight: normal
+        text-align: left
+      h4
+        font-weight: normal
+        text-align: left
+        font-size: 17px
+      ul
+        list-style: none
+        text-align: left
+        padding-left: 50px
+        li
+          display: block
+          width: 430px
+          height: 90px
+          padding-left: 80px
+
+          &.mln1
+            background: url(../img/mln1.png) left top no-repeat
+          &.mln2
+            background: url(../img/mln2.png) left top no-repeat
+.work
+  background: url(../img/bg_yellow.png) center no-repeat
+  height: 743px
+  h2
+    font-size: 42px
+    font-weight: normal
+    text-align: center
+    text-transform: uppercase
+    margin-top: 60px
+  .images
+    text-align: center
+    margin-top: 182px
+    img
+      margin-right: 35px
+      display: inline-block
+    img:last-child
+      margin-right: 0
+  .popup
+    position: relative
+    display: inline-block
+    &.up1
+      background: url(../img/qUp.png) center no-repeat
+      bottom: 360px
+      right: 30px
+      width: 289px
+      height: 132px
+    &.up2
+      background: url(../img/qUp.png) center no-repeat
+      bottom: 360px
+      left: 167px
+      width: 289px
+      height: 132px
+    &.down1
+      background: url(../img/qDown.png) center no-repeat
+      bottom: 5px
+      right: 390px
+      width: 289px
+      height: 132px
+      margin: 15px
+    &.down2
+      background: url(../img/qDown.png) center no-repeat
+      bottom: 150px
+      left: 713px
+      width: 289px
+      height: 132px
+
+    h2
+      font-size: 26px
+      font-weight: bold
+      margin-top: 15px
+      margin-bottom: 5px
+
+    p
+      text-align: center
+      font-size: 17px
+      margin: 0
+
+footer
+  @extend header
+  height: 120px
+  position: relative
+  nav
+    margin-top: 35px
+  .addr
+    margin-top: 30px
+.feedback
+  form
+    width: 300px
+    h3
+      text-transform: uppercase
+      text-align: center
+      font-size: 20px
+    input
+      @include border-radius(2px)
+      padding-left: 14px
+      width: 285px
+      height: 45px
+      background: #ffffff
+      display: block
+      margin: auto auto 10px
+      border: 1px solid darkgrey
+    button
+      @include border-radius(2px)
+      width: 285px
+      height: 68px
+      background: rgb(159,82,140)
+      color: #ffffff
+      text-transform: uppercase
+      display: block
+      margin: 10px auto auto
+      font-size: 26px
+      border: none
+      @include box-shadow(1px 2px 2px rgba(0,0,0,.8))
+    button:hover
+      background: rgb(171,97,153)
+    button:active
+      @include box-shadow(0 0 0 rgb(0,0,0))
+    textarea
+      width: 285px
+      height: 80px
+      background: #ffffff
+      display: block
+      border: 1px solid darkgrey
+      margin: 10px auto auto
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
